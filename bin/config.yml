@@ -1,0 +1,6 @@
+# Time in seconds before player is considered AFK
+afkTime: 600
+# Time in seconds it should take to deduct half a bar
+hungerTime: 600
+# How often in ticks to check for AFK players, higher values perform better but are less accurate (1200 is 1 minute)
+interval: 1200
