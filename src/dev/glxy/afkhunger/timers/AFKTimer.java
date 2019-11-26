@@ -24,7 +24,7 @@ public class AFKTimer {
 				MoveListener.lastMove.forEach((k, v) -> {
 					Player player = k;
 					Long lastMoveTime = v;
-					if (player.isOnline()) {
+					if (player != null) {
 						if (lastMoveTime + afkTime < System.currentTimeMillis()) {
 							//player.sendMessage("[DEBUG] Food has been deducted for being AFK too long");
 							float saturationLevel = player.getSaturation();
