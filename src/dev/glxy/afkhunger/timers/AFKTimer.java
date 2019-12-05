@@ -1,7 +1,7 @@
 package dev.glxy.afkhunger.timers;
 
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
+import org.bukkit.GameMode;
 import org.bukkit.scheduler.BukkitScheduler;
 
 import dev.glxy.afkhunger.Main;
@@ -21,12 +21,9 @@ public class AFKTimer {
 		scheduler.scheduleSyncRepeatingTask(plugin, new Runnable() {
 			@Override
 			public void run() {
-				MoveListener.lastMove.forEach((k, v) -> {
-					Player player = k;
-					Long lastMoveTime = v;
-					if (player != null) {
+				MoveListener.lastMove.forEach((player, lastMoveTime) -> {
+					if (player != null && player.getGameMode() == GameMode.SURVIVAL) {
 						if (lastMoveTime + afkTime < System.currentTimeMillis()) {
-							//player.sendMessage("[DEBUG] Food has been deducted for being AFK too long");
 							float saturationLevel = player.getSaturation();
 							if (saturationLevel > 0) {
 								player.setSaturation(Math.max(saturationLevel - 1, 0));
@@ -35,8 +32,6 @@ public class AFKTimer {
 							}
 							MoveListener.lastMove.put(player, lastMoveTime + hungerTime);
 						}
-						//player.sendMessage("[DEBUG] Your current saturation level is " + player.getSaturation());
-						//player.sendMessage("[DEBUG] Your current food level is " + player.getFoodLevel());
 					} else {
 						MoveListener.lastMove.remove(player);
 					}
