@@ -1,4 +1,4 @@
-# Galaxy's AFKHunger
+# Abby's AFKHunger
 Spigot plugin that slowly deducts food from AFK players to discourage AFKing
 
 ## What's this?
