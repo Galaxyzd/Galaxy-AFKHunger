@@ -1,15 +1,15 @@
-package dev.glxy.afkhunger.commands;
+package com.abbydiode.afkhunger.commands;
+
+import com.abbydiode.afkhunger.App;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import dev.glxy.afkhunger.Main;
-
 public class AFKHungerCommand implements CommandExecutor {
-	private Main plugin;
+	private App plugin;
 	
-	public AFKHungerCommand(Main plugin) {
+	public AFKHungerCommand(App plugin) {
 		this.plugin = plugin;
 		plugin.getCommand("afkhunger").setExecutor(this);
 	}

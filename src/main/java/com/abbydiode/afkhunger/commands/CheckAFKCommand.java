@@ -1,4 +1,7 @@
-package dev.glxy.afkhunger.commands;
+package com.abbydiode.afkhunger.commands;
+
+import com.abbydiode.afkhunger.App;
+import com.abbydiode.afkhunger.listeners.MoveListener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -6,13 +9,10 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import dev.glxy.afkhunger.Main;
-import dev.glxy.afkhunger.listeners.MoveListener;
-
 public class CheckAFKCommand implements CommandExecutor {
-	private Main plugin;
+	private App plugin;
 	
-	public CheckAFKCommand(Main plugin) {
+	public CheckAFKCommand(App plugin) {
 		this.plugin = plugin;
 		plugin.getCommand("checkafk").setExecutor(this);
 	}
