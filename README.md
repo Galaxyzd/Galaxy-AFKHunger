@@ -10,4 +10,4 @@ Very simple and lightweight plugin that deducts food from players that are idle 
 1. Download from [Spigot](https://www.spigotmc.org/resources/galaxys-afk-hunger.73024/) or compile theplugin yourself
 2. Drag and drop into server plugins folder
 3. Run or reload server
-4. Configuration is found in plugins/Galaxys-AFKHunger/config.yml
+4. Configuration is found in plugins/Abbys-AFKHunger/config.yml
