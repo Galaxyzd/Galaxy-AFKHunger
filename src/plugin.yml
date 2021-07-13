@@ -1,9 +1,0 @@
-name: Galaxys-AFKHunger
-version: 1.0
-author: Galaxy
-main: dev.glxy.afkhunger.Main
-description: This plugin was made for Max No Relax
-
-commands:
-   afkhunger:
-      description: Check if afkhunger is properly installed

@@ -1,17 +1,17 @@
-package dev.glxy.afkhunger.timers;
+package com.abbydiode.afkhunger.timers;
+
+import com.abbydiode.afkhunger.App;
+import com.abbydiode.afkhunger.listeners.MoveListener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.scheduler.BukkitScheduler;
 
-import dev.glxy.afkhunger.Main;
-import dev.glxy.afkhunger.listeners.MoveListener;
-
 public class AFKTimer {
-	private Main plugin;
+	private App plugin;
 	BukkitScheduler scheduler;
 	
-	public AFKTimer(Main plugin) {
+	public AFKTimer(App plugin) {
 		this.plugin = plugin;
 		Long interval = plugin.getConfig().getLong("interval");
 		Integer afkTime = plugin.getConfig().getInt("afkTime") * 1000;
