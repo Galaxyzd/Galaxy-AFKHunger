@@ -1,9 +1,9 @@
 main: com.abbydiode.afkhunger.App
-name: Abbys-AFKHunger
-version: 1.1.1
-description: Slowly deduct food from players that are idle to discourage idling
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
 author: https://github.com/abbydiode
-website: https://www.spigotmc.org/resources/abbys-deathbans.73017/
+website: ${project.url}
 api-version: 1.17
 
 commands:
