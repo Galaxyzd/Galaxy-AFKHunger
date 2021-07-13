@@ -4,8 +4,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.abbydiode.afkhunger</groupId>
   <artifactId>afkhunger</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
   <packaging>jar</packaging>
+  <name>Abbys-AFKHunger</name>
+  <url>https://www.spigotmc.org/resources/abbys-afk-hunger.73024/</url>
+  <description>Slowly deduct food from players that are idle to discourage idling</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -29,6 +32,7 @@
     <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
     <resources>
       <resource>
+        <filtering>true</filtering>
         <directory>${project.basedir}/src/main/resources</directory>
         <includes>
           <include>plugin.yml</include>
