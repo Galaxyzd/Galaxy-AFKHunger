@@ -3,7 +3,7 @@ Spigot plugin that slowly deducts food from AFK players to discourage AFKing
 
 ## What's this?
 
-This is a very simple and lightweight plugin that deducts food from players that are AFKing in order to discourage AFKing. Configuration allows you to specify amount of time before player is considered AFK, amount of time between deducting food and interval for checking if player is actually AFK.
+Very simple and lightweight plugin that deducts food from players that are idle in order to discourage idling. Configuration allows you to specify amount of time before player is considered idle, amount of time between deducting food and interval for checking if player is actually idle.
 
 ## Instructions
 
