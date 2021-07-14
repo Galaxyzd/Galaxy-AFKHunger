@@ -1,6 +1,6 @@
 # Abby's AFKHunger
 
-Spigot plugin that slowly deducts food from AFK players to discourage AFKing
+Spigot plugin that slowly deducts food from idle players to discourage idling
 
 ## What's this?
 
