@@ -4,8 +4,10 @@ version: ${project.version}
 description: ${project.description}
 author: https://github.com/abbydiode
 website: ${project.url}
-api-version: 1.17
+api-version: 1.18
 
 commands:
    afkhunger:
       description: Check if afkhunger is properly installed
+   checkafk:
+      description: Check if player is marked as AFK or not
