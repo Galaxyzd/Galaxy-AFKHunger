@@ -1,6 +1,7 @@
 package com.abbydiode.afkhunger;
 
 import com.abbydiode.afkhunger.commands.AFKHungerCommand;
+import com.abbydiode.afkhunger.commands.CheckAFKCommand;
 import com.abbydiode.afkhunger.listeners.MoveListener;
 import com.abbydiode.afkhunger.timers.AFKTimer;
 
@@ -13,6 +14,7 @@ public class App extends JavaPlugin {
 		
 		new MoveListener(this);
 		new AFKHungerCommand(this);
+		new CheckAFKCommand((this));
 		new AFKTimer(this);
 	}
 }
