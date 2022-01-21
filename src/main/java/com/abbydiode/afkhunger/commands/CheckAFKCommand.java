@@ -22,15 +22,14 @@ public class CheckAFKCommand implements CommandExecutor {
 		if (sender.hasPermission("afkhunger.check")) {
 			if (args.length > 0) {
 				Player target = Bukkit.getPlayer(args[0]);
-				sender.sendMessage("target: " + target);
 				if (target != null) {
 					Integer afkTime = plugin.getConfig().getInt("afkTime") * 1000;
 					Long lastMoveTime = MoveListener.lastMove.get(target);
 					
 					sender.sendMessage(target.getName() + " is currently " + 
-					(lastMoveTime != null && lastMoveTime + afkTime < System.currentTimeMillis() ? "" : "not") + " marked AFK");
+					(lastMoveTime != null && lastMoveTime + afkTime < System.currentTimeMillis() ? "" : "not ") + "marked as AFK.");
 				} else {
-					sender.sendMessage("User " + args[0] + "is currently not online.");
+					sender.sendMessage("User " + args[0] + " is currently not online.");
 				}
 			} else {
 				sender.sendMessage("This command requires one argument.");
